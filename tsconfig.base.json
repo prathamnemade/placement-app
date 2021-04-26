@@ -1,0 +1,54 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@placement-tci/shared/storybook": [
+        "libs/shared/storybook/src/index.ts"
+      ],
+      "@placement-tci/shared/assets": [
+        "libs/shared/assets/src/index.ts"
+      ],
+      "@placement-tci/shared/styles": [
+        "libs/shared/styles/src/index.ts"
+      ],
+      "@placement-tci/shared/checkbox": [
+        "libs/shared/checkbox/src/index.js"
+      ],
+      "@placement-tci/shared/progress": [
+        "libs/shared/progress/src/index.js"
+      ],
+      "@placement-tci/shared/tags": [
+        "libs/shared/tags/src/index.js"
+      ],
+      "@placement-tci/shared/input": [
+        "libs/shared/input/src/index.js"
+      ],
+      "@placement-tci/shared/typography": [
+        "libs/shared/typography/src/index.js"
+      ],
+      "@placement-tci/shared/button": [
+        "libs/shared/button/src/index.js"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

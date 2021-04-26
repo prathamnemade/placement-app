@@ -1,0 +1,45 @@
+{
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "affected": { "defaultBase": "master" },
+  "npmScope": "placement-tci",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "placement-tci": {
+      "tags": [],
+      "implicitDependencies": ["shared-assets", "shared-styles"]
+    },
+    "placement-tci-e2e": {
+      "tags": [],
+      "implicitDependencies": ["placement-tci", "shared-styles"]
+    },
+    "shared-storybook": { "tags": [] },
+    "shared-assets": { "tags": [] },
+    "shared-styles": { "tags": [] },
+    "shared-checkbox": { "tags": [] },
+    "shared-progress": { "tags": [] },
+    "shared-tags": { "tags": [] },
+    "shared-input": { "tags": [] },
+    "shared-typography": { "tags": [] },
+    "shared-button": { "tags": [] }
+  }
+}

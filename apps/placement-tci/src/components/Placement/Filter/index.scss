@@ -1,0 +1,33 @@
+@import "variables.module";
+
+.placement-filter {
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 91px 0 0 0;
+  background: #fff;
+  .placement-filter_heading {
+    border-bottom: 1px solid #eee;
+    padding: 0 14px;
+    .clear-option {
+      text-align: right;
+      div {
+        cursor: pointer;
+      }
+      &.active div {
+        color: $my-font-color;
+      }
+    }
+  }
+  .placement-filter_menu {
+    background: #fff;
+    .ant-collapse-header {
+      p {
+        margin-bottom: 0;
+        color: $my-font-color;
+      }
+    }
+  }
+}
