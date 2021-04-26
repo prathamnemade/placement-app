@@ -6,8 +6,8 @@
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parserOptions": {
         "project": [
-          "apps/placement-tci/tsconfig.*?.json",
-          "apps/placement-tci/.storybook/tsconfig.json"
+          "apps/placement-app/tsconfig.*?.json",
+          "apps/placement-app/.storybook/tsconfig.json"
         ]
       },
       "rules": {}

@@ -8,7 +8,7 @@
     "nx.json": "*"
   },
   "affected": { "defaultBase": "master" },
-  "npmScope": "placement-tci",
+  "npmScope": "placement-app",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
@@ -24,13 +24,13 @@
     }
   },
   "projects": {
-    "placement-tci": {
+    "placement-app": {
       "tags": [],
       "implicitDependencies": ["shared-assets", "shared-styles"]
     },
-    "placement-tci-e2e": {
+    "placement-app-e2e": {
       "tags": [],
-      "implicitDependencies": ["placement-tci", "shared-styles"]
+      "implicitDependencies": ["placement-app", "shared-styles"]
     },
     "shared-storybook": { "tags": [] },
     "shared-assets": { "tags": [] },

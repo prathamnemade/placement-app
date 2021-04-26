@@ -1,9 +1,9 @@
-import { Progress } from '@placement-tci/shared/progress';
-import { Tag } from '@placement-tci/shared/tags';
-import { Title, Text } from '@placement-tci/shared/typography';
+import { Progress } from '@placement-app/shared/progress';
+import { Tag } from '@placement-app/shared/tags';
+import { Title, Text } from '@placement-app/shared/typography';
 import { Avatar, Card, Col, Row, Tooltip } from 'antd';
 import React from 'react';
-import { Button } from '@placement-tci/shared/button';
+import { Button } from '@placement-app/shared/button';
 import './index.scss';
 
 export const FileCard = ({ file }) => {

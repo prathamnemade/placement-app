@@ -18,31 +18,31 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@placement-tci/shared/storybook": [
+      "@placement-app/shared/storybook": [
         "libs/shared/storybook/src/index.ts"
       ],
-      "@placement-tci/shared/assets": [
+      "@placement-app/shared/assets": [
         "libs/shared/assets/src/index.ts"
       ],
-      "@placement-tci/shared/styles": [
+      "@placement-app/shared/styles": [
         "libs/shared/styles/src/index.ts"
       ],
-      "@placement-tci/shared/checkbox": [
+      "@placement-app/shared/checkbox": [
         "libs/shared/checkbox/src/index.js"
       ],
-      "@placement-tci/shared/progress": [
+      "@placement-app/shared/progress": [
         "libs/shared/progress/src/index.js"
       ],
-      "@placement-tci/shared/tags": [
+      "@placement-app/shared/tags": [
         "libs/shared/tags/src/index.js"
       ],
-      "@placement-tci/shared/input": [
+      "@placement-app/shared/input": [
         "libs/shared/input/src/index.js"
       ],
-      "@placement-tci/shared/typography": [
+      "@placement-app/shared/typography": [
         "libs/shared/typography/src/index.js"
       ],
-      "@placement-tci/shared/button": [
+      "@placement-app/shared/button": [
         "libs/shared/button/src/index.js"
       ]
     }

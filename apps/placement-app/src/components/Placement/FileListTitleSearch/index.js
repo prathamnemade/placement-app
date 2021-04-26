@@ -1,4 +1,4 @@
-import { Title, Text } from '@placement-tci/shared/typography';
+import { Title, Text } from '@placement-app/shared/typography';
 import { Col, Row, Input } from 'antd';
 import React from 'react';
 import './index.scss';

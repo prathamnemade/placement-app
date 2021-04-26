@@ -1,5 +1,5 @@
-import {CheckboxGroup} from '@placement-tci/shared/checkbox'
-import { Title, Paragraph } from '@placement-tci/shared/typography';
+import {CheckboxGroup} from '@placement-app/shared/checkbox'
+import { Title, Paragraph } from '@placement-app/shared/typography';
 import { Col, Collapse, Layout, Row, Select } from 'antd';
 import React from 'react';
 import { ContractType, locations, SourceMarket, TravelType } from './constants';

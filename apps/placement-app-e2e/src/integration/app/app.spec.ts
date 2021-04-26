@@ -1,7 +1,7 @@
-describe('placement-tci: App component', () => {
+describe('placement-app: App component', () => {
   beforeEach(() => cy.visit('/iframe.html?id=app--primary'));
     
     it('should render the component', () => {
-      cy.get('h1').should('contain', 'Welcome to placement-tci!');
+      cy.get('h1').should('contain', 'Welcome to placement-app!');
     });
 });

@@ -3,7 +3,7 @@
   "cli": {
     "defaultCollection": "@nrwl/react"
   },
-  "defaultProject": "placement-tci",
+  "defaultProject": "placement-app",
   "generators": {
     "@nrwl/react": {
       "application": {
@@ -21,9 +21,9 @@
     }
   },
   "projects": {
-    "placement-tci": {
-      "root": "apps/placement-tci",
-      "sourceRoot": "apps/placement-tci/src",
+    "placement-app": {
+      "root": "apps/placement-app",
+      "sourceRoot": "apps/placement-app/src",
       "projectType": "application",
       "targets": {
         "build": {
@@ -38,11 +38,11 @@
           },
           "extractCss": true,
           "options": {
-            "outputPath": "dist/apps/placement-tci",
-            "index": "apps/placement-tci/src/index.html",
-            "main": "apps/placement-tci/src/main.tsx",
-            "polyfills": "apps/placement-tci/src/polyfills.ts",
-            "tsConfig": "apps/placement-tci/tsconfig.app.json",
+            "outputPath": "dist/apps/placement-app",
+            "index": "apps/placement-app/src/index.html",
+            "main": "apps/placement-app/src/main.tsx",
+            "polyfills": "apps/placement-app/src/polyfills.ts",
+            "tsConfig": "apps/placement-app/tsconfig.app.json",
             "stylePreprocessorOptions": {
               "includePaths": [
                 "libs/shared/styles/src"
@@ -55,8 +55,8 @@
             },
             "extractCss": true,
             "assets": [
-              "apps/placement-tci/src/favicon.ico",
-              "apps/placement-tci/src/assets",
+              "apps/placement-app/src/favicon.ico",
+              "apps/placement-app/src/assets",
               {
                 "input": "libs/shared/assets/src/lib",
                 "glob": "**/*",
@@ -65,7 +65,7 @@
             ],
             "styles": [
               "libs/shared/styles/src/index.scss",
-              "apps/placement-tci/src/styles.scss"
+              "apps/placement-app/src/styles.scss"
             ],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
@@ -74,8 +74,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/placement-tci/src/environments/environment.ts",
-                  "with": "apps/placement-tci/src/environments/environment.prod.ts"
+                  "replace": "apps/placement-app/src/environments/environment.ts",
+                  "with": "apps/placement-app/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -98,11 +98,11 @@
         "serve": {
           "executor": "@nrwl/web:dev-server",
           "options": {
-            "buildTarget": "placement-tci:build"
+            "buildTarget": "placement-app:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "placement-tci:build:production"
+              "buildTarget": "placement-app:build:production"
             }
           }
         },
@@ -110,17 +110,17 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/placement-tci/**/*.{ts,tsx,js,jsx}"
+              "apps/placement-app/**/*.{ts,tsx,js,jsx}"
             ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
           "outputs": [
-            "coverage/apps/placement-tci"
+            "coverage/apps/placement-app"
           ],
           "options": {
-            "jestConfig": "apps/placement-tci/jest.config.js",
+            "jestConfig": "apps/placement-app/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -130,7 +130,7 @@
             "uiFramework": "@storybook/react",
             "port": 4400,
             "config": {
-              "configFolder": "apps/placement-tci/.storybook"
+              "configFolder": "apps/placement-app/.storybook"
             }
           },
           "configurations": {
@@ -146,9 +146,9 @@
           ],
           "options": {
             "uiFramework": "@storybook/react",
-            "outputPath": "dist/storybook/placement-tci",
+            "outputPath": "dist/storybook/placement-app",
             "config": {
-              "configFolder": "apps/placement-tci/.storybook"
+              "configFolder": "apps/placement-app/.storybook"
             }
           },
           "configurations": {
@@ -159,21 +159,21 @@
         }
       }
     },
-    "placement-tci-e2e": {
-      "root": "apps/placement-tci-e2e",
-      "sourceRoot": "apps/placement-tci-e2e/src",
+    "placement-app-e2e": {
+      "root": "apps/placement-app-e2e",
+      "sourceRoot": "apps/placement-app-e2e/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/placement-tci-e2e/cypress.json",
-            "tsConfig": "apps/placement-tci-e2e/tsconfig.e2e.json",
-            "devServerTarget": "placement-tci:serve"
+            "cypressConfig": "apps/placement-app-e2e/cypress.json",
+            "tsConfig": "apps/placement-app-e2e/tsconfig.e2e.json",
+            "devServerTarget": "placement-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "placement-tci:serve:production"
+              "devServerTarget": "placement-app:serve:production"
             }
           }
         },
@@ -181,7 +181,7 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/placement-tci-e2e/**/*.{js,ts}"
+              "apps/placement-app-e2e/**/*.{js,ts}"
             ]
           }
         }

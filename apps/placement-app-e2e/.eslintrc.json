@@ -5,7 +5,7 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parserOptions": {
-        "project": "apps/placement-tci-e2e/tsconfig.*?.json"
+        "project": "apps/placement-app-e2e/tsconfig.*?.json"
       },
       "rules": {}
     },
