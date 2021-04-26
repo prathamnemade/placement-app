@@ -1,9 +1,9 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { PlacementPage } from './scenes/Placement';
-import configureStore from './store';
-import history from './utils/history';
+import React from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { PlacementPage } from "./containers/Placement";
+import configureStore from "./store";
+import history from "./utils/history";
 
 const App = () => {
   const initialState = {};
@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <BrowserRouter >
+      <BrowserRouter>
         <Switch>
           <Route path="/" children={<PlacementPage />} />
         </Switch>
