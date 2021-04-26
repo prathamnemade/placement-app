@@ -1,23 +1,21 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { PlacementPage } from "./containers/Placement";
-import configureStore from "./store";
+import { BrowserRouter } from "react-router-dom";
+import App from "./containers/App";
+import configureStore from "./configureStore";
 import history from "./utils/history";
 
-const App = () => {
+const AppContainer = () => {
   const initialState = {};
   const store = configureStore(initialState, history);
 
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Switch>
-          <Route path="/" children={<PlacementPage />} />
-        </Switch>
+        <App />
       </BrowserRouter>
     </Provider>
   );
 };
 
-export default App;
+export default AppContainer;
