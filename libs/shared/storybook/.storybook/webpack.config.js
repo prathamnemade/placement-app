@@ -1,5 +1,5 @@
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-const rootWebpackConfig = require('../../../../.storybook/webpack.config');
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
+const rootWebpackConfig = require("../../../../.storybook/webpack.config");
 /**
  * Export a function. Accept the base config as the only param.
  *
@@ -9,7 +9,7 @@ module.exports = async ({ config, mode }) => {
   config = await rootWebpackConfig({ config, mode });
 
   const tsPaths = new TsconfigPathsPlugin({
-    configFile: './tsconfig.base.json',
+    configFile: "./tsconfig.base.json",
   });
 
   config.resolve.plugins
@@ -22,7 +22,7 @@ module.exports = async ({ config, mode }) => {
   const svgRuleIndex = config.module.rules.findIndex((rule) => {
     const { test } = rule;
 
-    return test.toString().startsWith('/\\.(svg|ico');
+    return test.toString().startsWith("/\\.(svg|ico");
   });
   config.module.rules[
     svgRuleIndex
@@ -30,11 +30,16 @@ module.exports = async ({ config, mode }) => {
 
   config.module.rules.push(
     {
+      test: /\.scss$/,
+      exclude: /node_modules/,
+      loaders: ["style-loader", "css-loader", "sass-loader"],
+    },
+    {
       test: /\.(png|jpe?g|gif|webp)$/,
-      loader: require.resolve('url-loader'),
+      loader: require.resolve("url-loader"),
       options: {
         limit: 10000, // 10kB
-        name: '[name].[hash:7].[ext]',
+        name: "[name].[hash:7].[ext]",
       },
     },
     {
@@ -47,7 +52,7 @@ module.exports = async ({ config, mode }) => {
           },
           use: [
             {
-              loader: require.resolve('@svgr/webpack'),
+              loader: require.resolve("@svgr/webpack"),
               options: {
                 svgo: false,
                 titleProp: true,
@@ -55,10 +60,10 @@ module.exports = async ({ config, mode }) => {
               },
             },
             {
-              loader: require.resolve('url-loader'),
+              loader: require.resolve("url-loader"),
               options: {
                 limit: 10000, // 10kB
-                name: '[name].[hash:7].[ext]',
+                name: "[name].[hash:7].[ext]",
                 esModule: false,
               },
             },
@@ -68,10 +73,10 @@ module.exports = async ({ config, mode }) => {
         {
           use: [
             {
-              loader: require.resolve('url-loader'),
+              loader: require.resolve("url-loader"),
               options: {
                 limit: 10000, // 10kB
-                name: '[name].[hash:7].[ext]',
+                name: "[name].[hash:7].[ext]",
               },
             },
           ],
