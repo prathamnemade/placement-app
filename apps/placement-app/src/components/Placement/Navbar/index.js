@@ -1,10 +1,9 @@
-import { Title } from "@placement-app/shared/typography";
-import { Col, Row } from "antd";
+import { Text, Title } from "@placement-app/shared/typography";
+import { Col, Dropdown, Menu, Row } from "antd";
 import React from "react";
-import "./index.scss";
 import { NavigationMenuItems } from "./constants";
+import "./index.scss";
 import { NavigationMenu } from "./NavMenu";
-import { RightMenu } from "./RightMenu";
 
 /**
  * Placement page navbar.
@@ -13,9 +12,9 @@ import { RightMenu } from "./RightMenu";
 export const PlacementNavbar = ({ toggleFilter }) => {
   return (
     <Row align="middle" className="placment-navbar">
-      <Col span={6}>
+      <Col xs={12} xl={7}>
         <Row align="middle">
-          <Col>
+          <Col className="filter-toggle-option">
             <Title
               level={5}
               children={<>&#9776;</>}
@@ -26,21 +25,50 @@ export const PlacementNavbar = ({ toggleFilter }) => {
           <Col>
             <img
               className="placement-logo"
-              src="/assets/empanelmentBG.png"
+              src="/assets/images/empanelmentBG.png"
               alt="logo"
             />
           </Col>
         </Row>
       </Col>
-      <Col span={12}>
-        <Row justify="center">
-          <NavigationMenu menuItems={NavigationMenuItems} />
-        </Row>
+      <Col xs={0} xl={10}>
+        <NavigationMenu
+          menuItems={NavigationMenuItems}
+          mode="horizontal"
+          className="navbar-menu"
+        />
       </Col>
-      <Col span={6}>
-        <Row justify="end">
-          <RightMenu/>
-        </Row>
+      <Col xs={12} xl={7}>
+        <Menu
+          theme="dark"
+          className="navbar-menu-right"
+          mode="horizontal"
+          selectable={false}
+        >
+          <Menu.Item key="mobile" className="right-menu-item mobile">
+            <Dropdown
+              overlay={
+                <NavigationMenu
+                  menuItems={NavigationMenuItems}
+                  className="navbar-mobile-menu"
+                />
+              }
+              placement="bottomRight"
+            >
+              <Text>&#9776;</Text>
+            </Dropdown>
+          </Menu.Item>
+          <Menu.Item key="bell" className="right-menu-item">
+            <img src="/assets/icons/bell.svg" alt="" />
+          </Menu.Item>
+          <Menu.Item key="avatar" className="right-menu-item">
+            <img
+              className="menu-avatar"
+              src="/assets/images/avatar-default.jpg"
+              alt=""
+            />
+          </Menu.Item>
+        </Menu>
       </Col>
     </Row>
   );

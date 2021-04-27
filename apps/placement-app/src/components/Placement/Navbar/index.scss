@@ -1,14 +1,72 @@
 .placment-navbar {
   height: 100%;
+  .ant-col,
+  .ant-row {
+    height: 100%;
+  }
+
   .placement-logo {
     height: 35px;
     width: 35px;
   }
-  .filter-toggle {
-    color: #fff;
-    margin-right: 15px;
-    @media screen and (min-width: 1200px) {
-      display: none;
+
+  .filter-toggle-option {
+    display: flex;
+    align-items: center;
+    .filter-toggle {
+      color: #fff;
+      margin-right: 15px;
+      @media screen and (min-width: 1200px) {
+        display: none;
+      }
     }
   }
+
+  .navbar-menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: inherit;
+
+    ul {
+      width: auto;
+      height: 100%;
+    }
+
+    li {
+      height: 100%;
+    }
+
+    .right-menu-item {
+      padding: 0 10px;
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.7;
+        background: none;
+      }
+      &.mobile {
+        span {
+          font-size: 19px;
+          height: 67px;
+          display: block;
+          color: #fff;
+        }
+
+        @media screen and (min-width: 1200px) {
+          display: none;
+        }
+      }
+    }
+
+    .menu-avatar {
+      width: 28px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+}
+
+.ant-dropdown {
+  z-index: 3;
 }

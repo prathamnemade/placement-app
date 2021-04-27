@@ -4,10 +4,10 @@ import "./index.scss";
 
 /**
  * Navigation menu for placment header
- * @param {*} props 
- * @returns 
+ * @param {*} props
+ * @returns
  */
-export const NavigationMenu = ({ menuItems }) => {
+export const NavigationMenu = ({ menuItems, mode, className }) => {
   const [selectedMenu, setSelectedMenu] = React.useState("1");
 
   const mainMenuClicked = (idx) => {
@@ -17,12 +17,16 @@ export const NavigationMenu = ({ menuItems }) => {
   return (
     <Menu
       theme="dark"
-      className="navbar-menu"
-      mode="horizontal"
+      className={className}
+      mode={mode}
       defaultSelectedKeys={[selectedMenu]}
       children={menuItems.map((item, index) => {
         return (
-          <Menu.Item key={index} onClick={() => mainMenuClicked(index)}>
+          <Menu.Item
+            key={index}
+            onClick={() => mainMenuClicked(index)}
+            className="menu-item"
+          >
             <img className="resource-icon mr-6" src={item.icon} alt="" />
             <span className="resource-name text-white semibold">
               {item.title}

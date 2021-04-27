@@ -1,11 +1,12 @@
 @import "./fonts";
 @import "./reset";
+@import "../variables.module.scss";
 
 //TODO: Write all the global scss here
-@media (max-width:801px) {
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
+@media (max-width: 801px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }

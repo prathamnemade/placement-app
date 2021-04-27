@@ -4,7 +4,7 @@ import {
   FileList,
   FileListTitleSearch,
   Filter,
-  PlacementNavbar
+  PlacementNavbar,
 } from "../../components/Placement";
 import "./index.scss";
 import { Header } from "@placement-app/shared/headers";
@@ -22,7 +22,6 @@ export const PlacementPage = (props) => {
     setFiles(["a", "b", "c", "d", "a", "b", "c", "d"]);
   }, []);
 
-  console.log("aa");
   if (!files) return "loading...";
 
   const toggleFilter = () => {
@@ -38,7 +37,7 @@ export const PlacementPage = (props) => {
             toggleFilter={toggleFilter}
             filterHidden={filterHidden}
           />
-        } 
+        }
       />
       <Layout>
         <Filter filterHidden={filterHidden} toggleFilter={toggleFilter} />
