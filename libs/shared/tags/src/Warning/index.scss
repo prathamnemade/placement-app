@@ -1,0 +1,11 @@
+$warning-border: #f8ab13;
+$warning-bg: #fffbe6;
+$warning-cl: #f8ab13;
+
+.ant-tag {
+  &.warning {
+    color: $warning-cl;
+    background: $warning-bg;
+    border-color: $warning-border; 
+  }
+}

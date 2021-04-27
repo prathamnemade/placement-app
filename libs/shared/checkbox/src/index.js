@@ -1,3 +1,4 @@
 
-export * from './checkbox/checkbox';
-export * from './group/group';
+import './index.scss';
+export * from './checkbox/index';
+export * from './group/index';

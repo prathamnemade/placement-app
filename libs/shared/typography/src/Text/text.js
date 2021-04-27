@@ -1,5 +1,5 @@
 import React from 'react';
-import './text.module.scss';
+import './text.scss';
 import { Typography } from 'antd';
 
 export const Text = ({

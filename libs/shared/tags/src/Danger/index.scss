@@ -1,0 +1,14 @@
+
+$danger-border: #ffa39e;
+$danger-bg: #fff1f0;
+$danger-cl: #f5222d;
+
+
+
+.ant-tag {
+  &.danger {
+    color: $danger-cl;
+    border-color: $danger-border;
+    background: $danger-bg;
+  }
+}

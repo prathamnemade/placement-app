@@ -1,0 +1,14 @@
+.placment-navbar {
+  height: 100%;
+  .placement-logo {
+    height: 35px;
+    width: 35px;
+  }
+  .filter-toggle {
+    color: #fff;
+    margin-right: 15px;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+}

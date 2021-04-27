@@ -1,0 +1,60 @@
+.ant-menu-dark {
+  .ant-menu-sub {
+    background: #333;
+  }
+  .ant-menu-item:focus,
+  .ant-menu-item:hover,
+  .ant-menu-item:active,
+  .ant-menu-item-selected {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item:hover,
+.ant-menu.ant-menu-dark .ant-menu-item:focus,
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ant-menu.ant-menu-dark.navbar-menu {
+  background: transparent;
+}
+
+.ant-menu {
+  margin: 0 auto;
+  max-width: 700px;
+  background: inherit;
+}
+
+.resource-name {
+  margin-left: 3px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .ant-menu-dark.ant-menu-horizontal > .ant-menu-item.right-menu-item {
+    padding: 0 7px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+.menu-avatar {
+  width: 28px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.mobile-menu-drawer .ant-drawer-wrapper-body,
+.mobile-menu-drawer .ant-drawer-header,
+.mobile-menu-drawer .ant-drawer-content {
+  background-color: #333333 !important;
+}

@@ -1,7 +1,7 @@
 import {CheckboxGroup} from '@placement-app/shared/checkbox'
 import { Title, Paragraph } from '@placement-app/shared/typography';
 import { Col, Collapse, Layout, Row, Select } from 'antd';
-import React from 'react';
+import React, { useState } from 'react';
 import { ContractType, locations, SourceMarket, TravelType } from './constants';
 import { FilterHeader } from './FilterHeader';
 import { FilterReset } from './FilterReset';
@@ -11,7 +11,10 @@ import './index.scss';
  * Filter Sider Component for Placement Panel
  * @returns React.ReactNode
  */
-export const Filter = () => {
+export const Filter = ({
+  filterHidden,
+  toggleFilter
+}) => {
   const [location, setLocation] = React.useState([]);
   const [sourceMarkets, setSourceMarkets] = React.useState([]);
   const [travelType, setTravelType] = React.useState([]);
@@ -38,6 +41,10 @@ export const Filter = () => {
     <Layout.Sider
       width={236}
       className="placement-filter"
+      collapsedWidth="0"
+      breakpoint="xl"
+      collapsed={filterHidden}
+      onCollapse={toggleFilter}
     >
       <Row
         align="middle"

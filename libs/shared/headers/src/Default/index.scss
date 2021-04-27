@@ -1,0 +1,14 @@
+$dark-background: #333;
+$default-background: #0077ea;
+
+.ant-layout-header {
+  position: fixed;
+  z-index: 10001;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  background: $default-background;
+  &.dark {
+    background: $dark-background;
+  }
+}

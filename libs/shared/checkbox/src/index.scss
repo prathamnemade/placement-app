@@ -1,0 +1,17 @@
+.ant-checkbox-wrapper {
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-align: left;
+  padding: 8px 5px;
+  .ant-checkbox { 
+    height: 14px;
+    width: 14px;
+    & + span {
+      display: inline-block;
+    }
+  }
+}

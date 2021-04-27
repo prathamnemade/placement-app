@@ -1,2 +1,2 @@
-
-export * from './lib/progress';
+import './index.scss';
+export * from './LineProgress/index';

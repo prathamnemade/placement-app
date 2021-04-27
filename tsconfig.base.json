@@ -42,8 +42,11 @@
       "@placement-app/shared/typography": [
         "libs/shared/typography/src/index.js"
       ],
-      "@placement-app/shared/button": [
-        "libs/shared/button/src/index.js"
+      "@placement-app/shared/buttons": [
+        "libs/shared/buttons/src/index.js"
+      ],
+      "@placement-app/shared/headers": [
+        "libs/shared/headers/src/index.js"
       ]
     }
   },

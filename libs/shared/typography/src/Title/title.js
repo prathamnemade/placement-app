@@ -1,5 +1,5 @@
 import React from 'react';
-import './title.module.scss';
+import './title.scss';
 import { Typography } from 'antd';
 
 export const Title = ({

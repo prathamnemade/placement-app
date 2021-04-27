@@ -1,5 +1,5 @@
 import React from 'react';
-import './paragraph.module.scss';
+import './paragraph.scss';
 import { Typography } from 'antd';
 
 export const Paragraph = ({
