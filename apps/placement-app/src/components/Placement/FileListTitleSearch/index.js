@@ -12,6 +12,7 @@ export const FileListTitleSearch = () => {
             <Title
               level={4}
               children="Showing 129 Files"
+              className="main-title"
             />
           </Col>
           <Col>

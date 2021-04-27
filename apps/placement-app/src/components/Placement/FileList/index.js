@@ -21,7 +21,7 @@ export const FileList = () => {
   const Tag = [SuccessTag, DangerTag, WarningTag, PurpleTag][
     Math.floor(Math.random() * 4)
   ];
-  const strokeColor = ["#f5222d", "orange", "#52c41a", "purple"];
+  const progressColors = ["success", "warning", "danger"];
 
   const sortMethod = () => alert("sorting...");
 
@@ -107,8 +107,7 @@ export const FileList = () => {
                 <Progress
                   className="file-progress"
                   percent={Math.floor(Math.random(0, 100) * 100)}
-                  showInfo={false}
-                  strokeColor={strokeColor[Math.floor(Math.random() * 3)]}
+                  color={progressColors[Math.floor(Math.random() * 3)]}
                 />
               </Tooltip>
             </Col>

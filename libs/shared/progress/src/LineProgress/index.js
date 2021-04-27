@@ -39,6 +39,8 @@ Progress.propTypes = {
 }
 
 
-Progress.defaultProps = {}
+Progress.defaultProps = {
+  showInfo: false
+}
 
 export default Progress
