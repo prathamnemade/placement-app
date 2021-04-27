@@ -9,6 +9,7 @@ import {
 import { Text, Title } from "@placement-app/shared/typography";
 import { Avatar, Col, Row, Table, Tooltip } from "antd";
 import React from "react";
+
 import "./index.scss";
 import { FileListTitles } from "./Titles";
 
@@ -197,11 +198,7 @@ export const FileList = () => {
 
   return (
     <div className="file-list">
-      <Table
-        columns={tableColumns}
-        dataSource={data}
-        pagination={false} 
-      />
+      <Table columns={tableColumns} dataSource={data} pagination={false} />
     </div>
-  )
+  );
 };
