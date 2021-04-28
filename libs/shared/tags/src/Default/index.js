@@ -2,9 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Tag as AntTag } from "antd";
 import "./index.scss";
+import { tagVarients } from "./constants";
 
 export const Tag = (props) => {
-  const _class_ = props.color + (props.className ? props.className : "");
+  const _class_ =
+    props.color +
+    " " +
+    props.shape +
+    " " +
+    props.type +
+    " " +
+    (props.className ? props.className : "");
   return <AntTag {...props} className={_class_} />;
 };
 
@@ -15,12 +23,16 @@ Tag.propTypes = {
   visible: PropTypes.bool,
   onClose: PropTypes.func,
   className: PropTypes.string,
-  color: PropTypes.oneOf(["danger", "purple", "success", "warning", "default"]),
+  color: PropTypes.oneOf(tagVarients),
+  type: PropTypes.oneOf(["unbordered", ""]),
+  shape: PropTypes.oneOf(["rounded", ""]),
 };
 
 Tag.defaultProps = {
   className: "",
-  color: "default",
+  color: "",
+  shape: "",
+  type: "",
 };
 
 export default Tag;

@@ -1,0 +1,17 @@
+.requirement-heading {
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 30px;
+  .requirement-heading-icon {
+    margin-right: 9px;
+  }
+  .requirement-heading-text {
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: #333333;
+    }
+  }
+}

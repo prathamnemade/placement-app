@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'antd/dist/antd.css';
-@import 'variables.module.scss';
+@import "antd/dist/antd.css";
+@import "variables.module.scss";
 
 * {
   font-family: $font-inter;
+}
+
+// ant-card css
+.ant-card-body {
+  padding: 0;
 }

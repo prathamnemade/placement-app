@@ -15,6 +15,9 @@ $warning-bg: #fffbe6;
 $warning-cl: #f8ab13;
 
 .ant-tag {
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
   &.warning {
     color: $warning-cl;
     background: $warning-bg;
@@ -34,5 +37,30 @@ $warning-cl: #f8ab13;
     color: $danger-cl;
     border-color: $danger-border;
     background: $danger-bg;
+  }
+
+  &.ghost {
+    background: inherit;
+    border: 0;
+    color: inherit;
+    line-height: 1;
+  }
+
+  &.requirement {
+    padding: 8px 10px;
+    border-radius: 100px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  &.rounded {
+    border-radius: 100px;
+  }
+
+  &.unbordered {
+    border: 0;
   }
 }

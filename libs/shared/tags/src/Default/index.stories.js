@@ -2,6 +2,7 @@ import { boolean, select, text, withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 import { Tag } from "./index";
 import "../index.scss";
+import { tagVarients } from "./constants";
 
 export default {
   title: "Tags/Default",
@@ -14,11 +15,7 @@ export const Options = () => (
     closable={boolean("closable", false)}
     visible={boolean("visible", true)}
     className={text("className", "")}
-    color={select(
-      "color",
-      ["danger", "purple", "success", "warning", "default"],
-      "default"
-    )}
+    color={select("color", tagVarients, "default")}
   />
 );
 
