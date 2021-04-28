@@ -1,11 +1,6 @@
 import { RoundButton } from "@placement-app/shared/buttons";
 import { Progress } from "@placement-app/shared/progress";
-import {
-  DangerTag,
-  PurpleTag,
-  SuccessTag,
-  WarningTag,
-} from "@placement-app/shared/tags";
+import { Tag } from "@placement-app/shared/tags";
 import { Text, Title } from "@placement-app/shared/typography";
 import { Avatar, Col, Row, Table, Tooltip } from "antd";
 import React from "react";
@@ -18,11 +13,8 @@ import { FileListTitles } from "./Titles";
  * @returns React.Node
  */
 export const FileList = () => {
-  const Tag = [SuccessTag, DangerTag, WarningTag, PurpleTag][
-    Math.floor(Math.random() * 4)
-  ];
+  const tagColors = ["danger", "purple", "success", "warning"];
   const progressColors = ["success", "warning", "danger"];
-
   const sortMethod = () => alert("sorting...");
 
   const tableColumns = [
@@ -83,7 +75,8 @@ export const FileList = () => {
       render: (criticality) => (
         <Row align="middle">
           <Col>
-            <Tag children={"Tag"} />
+            <Tag children={"Tag"} color={tagColors[Math.floor(Math.random() * 4)]
+            } />
           </Col>
         </Row>
       ),

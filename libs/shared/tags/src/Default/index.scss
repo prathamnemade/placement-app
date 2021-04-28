@@ -1,0 +1,38 @@
+$danger-border: #ffa39e;
+$danger-bg: #fff1f0;
+$danger-cl: #f5222d;
+
+$purple-border: #d3adf7;
+$purple-bg: #f9f0ff;
+$purple-cl: #722ed1;
+
+$success-border: #b7eb8f;
+$success-bg: #f6ffed;
+$success-cl: #52c41a;
+
+$warning-border: #f8ab13;
+$warning-bg: #fffbe6;
+$warning-cl: #f8ab13;
+
+.ant-tag {
+  &.warning {
+    color: $warning-cl;
+    background: $warning-bg;
+    border-color: $warning-border;
+  }
+  &.success {
+    color: $success-cl;
+    border-color: $success-border;
+    background: $success-bg;
+  }
+  &.purple {
+    color: $purple-cl;
+    background: $purple-bg;
+    border-color: $purple-border;
+  }
+  &.danger {
+    color: $danger-cl;
+    border-color: $danger-border;
+    background: $danger-bg;
+  }
+}

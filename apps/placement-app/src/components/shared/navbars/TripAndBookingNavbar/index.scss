@@ -1,0 +1,116 @@
+.booking-navbar {
+  height: 100%;
+  .ant-col,
+  .ant-row {
+    height: 100%;
+  }
+
+  .booking-logo {
+    img {
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  .booking-back {
+    display: flex;
+    align-items: center;
+    .back-option {
+      cursor: pointer;
+      color: #fff;
+      margin-right: 15px;
+    }
+  }
+
+  .booking-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    span {
+      line-height: 1;
+      font-size: 12px;
+      letter-spacing: -0.37px;
+      color: #a4a4a4;
+    }
+    h5 {
+      margin: 0 2px 5px 0;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.43px;
+      color: #ffffff;
+    }
+  }
+
+  .booking-navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    ul {
+      width: auto;
+    }
+    li {
+      line-height: 1;
+    }
+  }
+
+  .booking-menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: inherit;
+    .right-menu-item {
+      * {
+        color: #fff;
+      }
+      padding: 0 10px;
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.9;
+        background: none;
+      }
+      &.mobile {
+        display: flex;
+        align-items: center;
+        span {
+          color: #fff;
+          font-size: 19px;
+          display: block;
+        }
+        @media screen and (min-width: 1200px) {
+          display: none;
+        }
+      }
+      .ant-badge {
+        sup {
+          background: #ff4d4f;
+          box-shadow: none;
+          font-size: 9px;
+          border-radius: 50%;
+          padding: 5px 0 0 0;
+          line-height: 1;
+        }
+      }
+      .message-btn {
+        background: #222;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        height: auto;
+        padding: 7px 15px;
+        span {
+          display: inline-block;
+          margin-left: 5px;
+          @media screen and (max-width: 1200px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-dropdown {
+  z-index: 3;
+}

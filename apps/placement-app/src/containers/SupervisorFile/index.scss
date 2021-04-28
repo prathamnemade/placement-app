@@ -1,0 +1,16 @@
+.supervisor-layout {
+  background: #fff;
+  .supervisor-content-wrapper {
+    background: #fff;
+    margin-top: 70px;
+    .supervisor-content {
+      overflow: initial;
+    }
+    .supervisor-list-container {
+      max-width: 1200px;
+      padding: 0 30px;
+      display: block;
+      margin: auto;
+    }
+  }
+}
