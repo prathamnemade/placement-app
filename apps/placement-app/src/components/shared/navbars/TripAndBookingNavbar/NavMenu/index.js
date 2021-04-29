@@ -8,7 +8,7 @@ import "./index.scss";
  * @returns
  */
 export const NavigationMenu = ({ menuItems, mode, className }) => {
-  const [selectedMenu, setSelectedMenu] = React.useState("1");
+  const [selectedMenu, setSelectedMenu] = React.useState("0");
 
   const mainMenuClicked = (idx) => {
     setSelectedMenu(idx);
@@ -27,7 +27,7 @@ export const NavigationMenu = ({ menuItems, mode, className }) => {
             onClick={() => mainMenuClicked(index)}
             className="menu-item"
           >
-            <img className="resource-icon mr-6" src={item.icon} alt="" />
+            <span className="icon">{item.icon}</span>
             <span className="resource-name text-white semibold">
               {item.title}
             </span>

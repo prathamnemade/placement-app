@@ -8,6 +8,13 @@
     .menu-item {
       background: inherit;
       height: 100%;
+      span.icon {
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+      }
+      display: flex;
+      align-items: center;
       &:hover,
       &:focus,
       &:active,

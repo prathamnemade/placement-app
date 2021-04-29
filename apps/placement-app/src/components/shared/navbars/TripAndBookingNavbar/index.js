@@ -1,3 +1,8 @@
+import {
+  EllipsesFill,
+  LongArrowLeft,
+  MessageFill,
+} from "@placement-app/shared/assets";
 import { Button } from "@placement-app/shared/buttons";
 import { Text, Title } from "@placement-app/shared/typography";
 import { Badge, Col, Dropdown, Menu, Row } from "antd";
@@ -25,7 +30,7 @@ export const TripAndBookingNavbar = ({
           <Col className="booking-back">
             <Title
               level={5}
-              children={<>&#8678;</>}
+              children={<LongArrowLeft />}
               className="back-option"
               onClick={handleBack}
             />
@@ -70,13 +75,16 @@ export const TripAndBookingNavbar = ({
             <Badge count={10}>
               <Button
                 className="message-btn"
-                icon={<>&#8678;</>}
+                icon={<MessageFill />}
                 children={"Messages"}
               />
             </Badge>
           </Menu.Item>
           <Menu.Item key="bell" className="right-menu-item">
-            <Text onClick={toggleDayItineraryModal}>•••</Text>
+            <Text
+              onClick={toggleDayItineraryModal}
+              children={<EllipsesFill />}
+            />
           </Menu.Item>
         </Menu>
       </Col>

@@ -1,8 +1,6 @@
 import { EnvironmentFilled } from "@ant-design/icons";
 import { Header } from "@placement-app/shared/headers";
-import { Tag } from "@placement-app/shared/tags";
-import { Layout, Avatar } from "antd";
-import Title from "antd/lib/skeleton/Title";
+import { Layout } from "antd";
 import React from "react";
 import { RequirementCard } from "../../components/shared/cards/RequirementCard";
 import { RequirementHeading } from "../../components/shared/headings/RequirementHeading";
@@ -10,6 +8,8 @@ import { TripAndBookingNavbar } from "../../components/shared/navbars/TripAndBoo
 import { Actionbar } from "../../components/SuperVisor/FIle/Actiobar";
 import { ItineraryHeader } from "../../components/SuperVisor/FIle/ItineraryHeader";
 import "./index.scss";
+
+import { BedSingle, FileCopy2Fill, Team, Unicycle } from "@placement-app/shared/assets";
 
 const headerList = [
   {
@@ -80,7 +80,7 @@ export const SuperVisorFilePage = (props) => {
                 setActiveIndex={setActiveIndex}
               />
               <RequirementHeading
-                icon={<EnvironmentFilled />}
+                icon={<BedSingle />}
                 text={"Hotels"}
               />
               <RequirementCard
@@ -89,17 +89,17 @@ export const SuperVisorFilePage = (props) => {
                 tags={["30/10/20", "31/10/20", "1/11/20"]}
                 extra={[
                   {
-                    icon: <EnvironmentFilled />,
+                    icon: <Team />,
                     text: "3 Adults, 2 Child",
                   },
                   {
-                    icon: <EnvironmentFilled />,
+                    icon: <FileCopy2Fill />,
                     text: "Customer Specific",
                   },
                 ]}
               />
               <RequirementHeading
-                icon={<EnvironmentFilled />}
+                icon={<Unicycle />}
                 text={"Activities"}
               />
               <RequirementCard
@@ -108,11 +108,11 @@ export const SuperVisorFilePage = (props) => {
                 tags={["30/10/20", "Starts from Barakhamba Road  |  8 AM"]}
                 extra={[
                   {
-                    icon: <EnvironmentFilled />,
+                    icon: <Team />,
                     text: "3 Adults, 2 Child",
                   },
                   {
-                    icon: <EnvironmentFilled />,
+                    icon: <FileCopy2Fill />,
                     text: "Walking Assistance",
                   },
                 ]}
@@ -123,12 +123,11 @@ export const SuperVisorFilePage = (props) => {
                 tags={["30/10/20", "Defence Colony   |  7:30 AM"]}
                 extra={[
                   {
-                    icon: <EnvironmentFilled />,
+                    icon: <Team />,
                     text: "3 Adults, 2 Child",
-                  }
+                  },
                 ]}
               />
-              
             </div>
           </Layout.Content>
         </Layout>
