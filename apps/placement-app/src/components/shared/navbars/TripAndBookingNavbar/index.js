@@ -2,6 +2,7 @@ import {
   EllipsesFill,
   LongArrowLeft,
   MessageFill,
+  SitaLogo,
 } from "@placement-app/shared/assets";
 import { Button } from "@placement-app/shared/buttons";
 import { Text, Title } from "@placement-app/shared/typography";
@@ -36,7 +37,7 @@ export const TripAndBookingNavbar = ({
             />
           </Col>
           <Col className="booking-logo">
-            <img src="/assets/images/empanelmentBG.png" alt="logo" />
+              <SitaLogo />
           </Col>
           <Col className="booking-info">
             <Title level={5}>Golden Triangle</Title>

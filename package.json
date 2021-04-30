@@ -27,6 +27,8 @@
   },
   "private": true,
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^27.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
     "antd": "^4.15.3",
     "connected-react-router": "^6.9.1",
     "core-js": "^3.6.5",

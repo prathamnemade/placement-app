@@ -27,7 +27,7 @@ export const NavigationMenu = ({ menuItems, mode, className }) => {
             onClick={() => mainMenuClicked(index)}
             className="menu-item"
           >
-            <img className="resource-icon mr-6" src={item.icon} alt="" />
+            <span className="icon">{item.icon}</span>
             <span className="resource-name text-white semibold">
               {item.title}
             </span>

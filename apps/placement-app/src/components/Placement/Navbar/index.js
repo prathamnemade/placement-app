@@ -4,7 +4,7 @@ import React from "react";
 import { NavigationMenuItems } from "./constants";
 import "./index.scss";
 import { NavigationMenu } from "./NavMenu";
-
+import { Bell, SitaLogo } from "@placement-app/shared/assets";
 /**
  * Placement page navbar.
  * @returns props
@@ -23,11 +23,9 @@ export const PlacementNavbar = ({ toggleFilter }) => {
             />
           </Col>
           <Col>
-            <img
-              className="placement-logo"
-              src="/assets/images/empanelmentBG.png"
-              alt="logo"
-            />
+            <span className="logo-icon">
+              <SitaLogo />
+            </span>
           </Col>
         </Row>
       </Col>
@@ -59,7 +57,9 @@ export const PlacementNavbar = ({ toggleFilter }) => {
             </Dropdown>
           </Menu.Item>
           <Menu.Item key="bell" className="right-menu-item">
-            <img src="/assets/icons/bell.svg" alt="" />
+            <span className="icon">
+              <Bell />
+            </span>
           </Menu.Item>
           <Menu.Item key="avatar" className="right-menu-item">
             <img

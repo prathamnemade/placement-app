@@ -1,12 +1,15 @@
+import { AnalyticsFilled, FilesFIlled } from '@placement-app/shared/assets';
+import React from 'react';
+
 export const NavigationMenuItems = [
   {
-    title: "Dashboard",
-    icon: "/assets/img/header_icons/dashboard-unselected.svg",
-    selectedIcon: "/assets/img/header_icons/dashboard.svg",
+    title: "Files",
+    icon: <FilesFIlled/>,
+    selectedIcon: <FilesFIlled/>,
   },
   {
-    title: "Placement",
-    icon: "/assets/img/header_icons/resources-unselected.svg",
-    selectedIcon: "/assets/img/header_icons/resources.svg",
+    title: "Dashboard",
+    icon: <AnalyticsFilled/>,
+    selectedIcon: <AnalyticsFilled/>,
   },
 ];

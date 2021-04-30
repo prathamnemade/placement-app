@@ -1,0 +1,32 @@
+.itinerary-header-wrapper {
+  overflow: hidden;
+  max-width: 600px;
+  .itinerary-header-container {
+    margin: 50px 0;
+    z-index: 1;
+    position: relative;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .ant-col {
+      position: relative;
+      &:not(:first-child):before {
+        content: "";
+        line-height: 1;
+        position: absolute;
+        left: -30px;
+        width: 50px;
+        top: 50%;
+        border-bottom: 2px dotted rgba(0, 0, 0, 0.15);
+        z-index: -1;
+      }
+    }
+  }
+}

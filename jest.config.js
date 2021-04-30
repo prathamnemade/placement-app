@@ -9,6 +9,6 @@ module.exports = {
     "<rootDir>/libs/shared/tags",
     "<rootDir>/libs/shared/input",
     "<rootDir>/libs/shared/typography",
-    "<rootDir>/libs/shared/buttons","<rootDir>/libs/shared/headers"
+    "<rootDir>/libs/shared/buttons","<rootDir>/libs/shared/headers","<rootDir>/libs/shared/ck-editor"
   ],
 };

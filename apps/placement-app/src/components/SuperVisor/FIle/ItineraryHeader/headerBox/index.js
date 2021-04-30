@@ -1,4 +1,4 @@
-import { EnvironmentFilled } from "@ant-design/icons";
+import { LocationFIlled } from "@placement-app/shared/assets";
 import React from "react";
 import "./index.scss";
 
@@ -21,7 +21,11 @@ export const ItineraryHeaderBox = ({
       onClick={() => setActiveIndex(index)}
     >
       <div className="rectangle-box-title">
-        <EnvironmentFilled /> {details.city}
+        <LocationFIlled
+          background={"none"}
+          color={selected !== index ? "#000" : "#fff"}
+        />
+        <span>{details.city}</span>
       </div>
       <div className="rectangle-box-date">
         {details.fromDate} {"->"} {details.toDate}

@@ -47,6 +47,9 @@
       ],
       "@placement-app/shared/headers": [
         "libs/shared/headers/src/index.js"
+      ],
+      "@placement-app/shared/ck-editor": [
+        "libs/shared/ck-editor/src/index.js"
       ]
     }
   },
